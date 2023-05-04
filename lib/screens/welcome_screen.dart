@@ -45,14 +45,14 @@ class WelcomeScreen extends StatelessWidget {
 
                   SizedBox(width: double.infinity,
                     height: 50,
-                    child: CustmonButton(
+                    child: CustomButton(
                       onPressed: (){
                         Navigator.push(
                           context, MaterialPageRoute(builder: (context)=>RegisterScreen())
                             
                         );
                       },
-                      text : "ON Comence",
+                      text : " Commence",
                     ),
                   ),
                 ],
