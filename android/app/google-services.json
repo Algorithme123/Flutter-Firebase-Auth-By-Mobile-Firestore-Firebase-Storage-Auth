@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "699818901344",
+    "project_id": "mobile-authentification",
+    "storage_bucket": "mobile-authentification.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:699818901344:android:e0206fe1e982fc8a11e805",
+        "android_client_info": {
+          "package_name": "com.gkd.mobile_authentification"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "699818901344-itsdjrt75i00b0cle2jgmdh67g7s56av.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXh2BN7wNCUURTLGN8FZBLC9BU0sVnIH4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "699818901344-itsdjrt75i00b0cle2jgmdh67g7s56av.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
