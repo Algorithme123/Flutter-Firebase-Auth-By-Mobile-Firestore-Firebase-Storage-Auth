@@ -1,6 +1,8 @@
 import 'package:country_picker/country_picker.dart';
 import 'package:flutter/material.dart';
+import 'package:mobile_authentification/provider/auth_provider.dart';
 import 'package:mobile_authentification/widgets/custom_button.dart';
+import 'package:provider/provider.dart';
 
 class RegisterScreen extends StatefulWidget {
   const RegisterScreen({Key? key}) : super(key: key);
@@ -150,12 +152,21 @@ class _RegisterScreenState extends State<RegisterScreen> {
               SizedBox(
                 width: double.infinity,
                 height: 50,
-                child: CustomButton(text: "Login", onPressed: () {}),
+                child: CustomButton(text: "Login", onPressed: ()=>sendPhoneNumber()),
               ),
             ],
           ),
         ),
       )),
     );
+
+  }
+
+  void sendPhoneNumber(){
+    // +22893856735
+    final ap=Provider.of<AuthProvider>(context, listen: false);
+    String phoneNumber = phoneNumberController.text.trim();
+    ap.signInWithPhone(context, "+${choixDuPays.phoneCode}${phoneNumber}");
+
   }
 }
